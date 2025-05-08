@@ -67,6 +67,7 @@ class DownloadHelper {
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 		curl_setopt($ch, CURLOPT_WRITEHEADER, $hp);
+		curl_setopt($ch, CURLOPT_ENCODING , '');
 
 		if (!empty($headers)) {
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
